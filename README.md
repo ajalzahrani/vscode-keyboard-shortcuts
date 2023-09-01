@@ -1,6 +1,6 @@
-# Custom Key Bindings for Visual Studio Code
+# Custom Key Bindings for Visual Studio Code (Mac)
 
-This repository contains custom key bindings for Visual Studio Code that override the default key bindings. These key bindings are designed to enhance your productivity and streamline your workflow when using Visual Studio Code.
+This repository contains a set of custom key bindings for Visual Studio Code, specifically tailored for Mac users. These key bindings are designed to override and enhance the default shortcuts, making your coding experience on macOS even more productive and efficient. However, most of these bindings are likely to work on Windows and Linux as well.
 
 ## Installation
 
