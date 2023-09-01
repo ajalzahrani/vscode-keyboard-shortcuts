@@ -1,0 +1,304 @@
+// Place your key bindings in this file to override the defaults
+[
+  /* PANEL */
+
+  // Toggle terminal
+  {
+    "key": "cmd+j",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+
+  // Move to github copilot chat tab
+  {
+  "key": "cmd+l",
+  "command": "workbench.panel.chat.view.copilot.focus",
+  "when": "panelFocus"
+  },
+
+  // Foucs on textInput when panel is focused
+  {
+    "key": "cmd+;",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "panelFocus"
+  },
+
+  /* SEARCH */
+  
+  // Open find
+  {
+    "key": "ctrl+/",
+    "command": "actions.find",
+    "when": "editorFocus || editorIsOpen || textInputFocus"
+  },
+
+  /* TEXT MOVEMENT */
+
+  // Delete all left
+  {
+    "key": "cmd+backspace",
+    "command": "deleteAllLeft",
+    "when": "textInputFocus && !editorReadonly"
+  },
+
+  // Undo action
+  {
+    "key": "ctrl+u",
+    "command": "undo",
+    "when": "textInputFocus && !editorReadonly"
+  },
+
+  // Redo action
+  {
+    "key": "ctrl+shift+u",
+    "command": "redo",
+    "when": "textInputFocus && !editorReadonly"
+  },
+
+  // Delete one character right
+  {
+    "key": "ctrl+'",
+    "command": "deleteRight",
+    "when": "textInputFocus && !editorReadonly"
+  }, 
+
+  // Delete one character left
+  {
+    "key": "ctrl+;",
+    "command": "deleteLeft",
+    "when": "textInputFocus && !editorReadonly"
+  },
+
+  // Cut line or selection region
+  {
+    "key": "cmd+k cmd+k",
+    "command": "editor.action.clipboardCutAction",
+    "when": "editorTextFocus"
+  },
+
+  // Paste line or selection region
+  {
+    "key": "cmd+y cmd+y",
+    "command": "editor.action.clipboardPasteAction"
+  },
+
+  /* LINE MOVEMENTS */
+
+  // Move curser right by one character
+  {
+    "key": "ctrl+l",
+    "command": "cursorRight",
+    "when": "textInputFocus"
+  },
+
+  // Move curser left by one character
+  {
+    "key": "ctrl+h",
+    "command": "cursorLeft",
+    "when": "textInputFocus"
+  },
+
+  // Move curser up by one character
+  {
+    "key": "ctrl+k",
+    "command": "cursorUp",
+    "when": "textInputFocus"
+  },
+
+  // Move curser down by one character
+  {
+    "key": "ctrl+j",
+    "command": "cursorDown",
+    "when": "textInputFocus"
+  },
+
+  // Move curser right by one word
+  {
+    "key": "alt+l",
+    "command": "cursorWordRight",
+    "when": "textInputFocus",
+  },
+
+  // Move curser left by one word
+  {
+    "key": "alt+h",
+    "command": "cursorWordLeft",
+    "when": "textInputFocus",
+  },
+
+  // Move curser right end of line
+  {
+    "key": "cmd+l",
+    "command": "cursorEnd",
+    "when": "editorTextFocus"
+  },
+
+  // Move curser left end of line
+  {
+    "key": "cmd+h",
+    "command": "cursorHome",
+    "when": "editorTextFocus"
+  },
+
+  // Move curser up by function
+  {
+    "key": "ctrl+shift+k",
+    "command": "gotoNextPreviousMember.previousMember", 
+    "when": "editorTextFocus"
+  },
+  
+  // Move curser down by function
+  {
+    "key": "ctrl+shift+j",
+    "command": "gotoNextPreviousMember.nextMember",
+    "when": "textInputFocus",
+  },
+
+  /* LINE EXTRACTOR */
+
+  // Duplicate line up
+  {
+    "key": "shift+alt+k",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus"
+  },
+
+  // Duplicate line down
+  {
+    "key": "shift+alt+j",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus"
+  },
+  
+  // Move line up
+  {
+    "command": "editor.action.moveLinesUpAction",
+    "key": "alt+k",
+    "when": "editorTextFocus"
+  },
+
+  // Move line down
+  {
+    "key": "alt+j",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus"
+  },
+
+  /* PAGE MOVEMENTS */
+  
+  // Move curser up by one page
+  {
+    "key": "ctrl+p",
+    "command": "cursorPageUp",
+    "when": "textInputFocus"
+  },
+
+  // Move curser down by one page
+  {
+    "key": "ctrl+n",
+    "command": "cursorPageDown",
+    "when": "textInputFocus"
+  },
+
+  // Move curser up by function
+  {
+    "key": "ctrl+9",
+    "command": "gotoNextPreviousMember.previousMember",
+    "when": "editorTextFocus"
+  },
+
+  // Move curser down by function
+  {
+    "key": "ctrl+0",
+    "command": "gotoNextPreviousMember.nextMember",
+    "when": "editorTextFocus"
+  },
+
+  /* SELECTIONS */
+
+  // Select one charcter right
+  {
+    "key": "ctrl+shift+l",
+    "command": "cursorRightSelect",
+    "when": "editorTextFocus"
+  },
+
+  // Select one charcter left
+  {
+    "key": "ctrl+shift+h",
+    "command": "cursorLeftSelect",
+    "when": "editorTextFocus"
+  },
+
+  // Select word right
+  {
+    "key": "alt+shift+l",
+    "command": "cursorWordRightSelect",
+    "when": "textInputFocus"
+  },
+  
+  // Select word left
+  {
+    "key": "alt+shift+h",
+    "command": "cursorWordLeftSelect",
+    "when": "textInputFocus"
+  },
+
+  // Select line right
+  {
+    "key": "cmd+shift+l",
+    "command": "cursorEndSelect",
+    "when": "textInputFocus",
+  },
+
+  // Select line left
+  {
+    "key": "cmd+shift+h",
+    "command": "cursorHomeSelect",
+    "when": "textInputFocus",
+  },
+
+  // Select line up
+  {
+    "key": "cmd+shift+k",
+    "command": "cursorUpSelect",
+    "when": "textInputFocus",
+  },
+
+  // Select line down
+  {
+    "key": "cmd+shift+j",
+    "command": "cursorDownSelect",
+    "when": "textInputFocus"
+  },  
+
+  /* VSCODE DEFAULT DISABLES */
+  {
+    "key": "shift+cmd+k",
+    "command": "-editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "-workbench.action.search.toggleQueryDetails",
+    "when": "inSearchEditor || searchViewletFocus"
+  },
+    {
+    "key": "alt+cmd+backspace",
+    "command": "-deleteFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
+  },
+    {
+    "key": "cmd+backspace",
+    "command": "-deleteAllLeft",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "-workbench.action.lastEditorInGroup"
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "-deleteFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
+  },
+]
